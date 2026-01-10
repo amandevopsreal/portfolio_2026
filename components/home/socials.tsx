@@ -5,7 +5,6 @@ import { DATA } from "@/data/data"
 import GithubJson from "@/public/static/lottie/github.json"
 import GmailJson from "@/public/static/lottie/gmail.json"
 import LinkedinJson from "@/public/static/lottie/linkedin.json"
-import XJson from "@/public/static/lottie/x.json"
 
 import { gAnalytics } from "@/lib/gAnalytics"
 import { cn } from "@/lib/utils"

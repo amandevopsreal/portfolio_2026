@@ -6,6 +6,9 @@ import { Hero } from "@/components/home/hero"
 import { Projects } from "@/components/home/projects"
 import { TechnicalSkills } from "@/components/home/technical-skills"
 
+// Prevent static generation to avoid SSR issues with analytics library
+export const dynamic = "force-dynamic"
+
 export default function Home() {
   return (
     <main className="min-h-lvh rounded-lg px-4">

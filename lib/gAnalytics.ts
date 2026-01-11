@@ -91,7 +91,8 @@ export const gAnalytics = new Proxy({} as any, {
     }
 
     // If we have the instance, return the method
-    const value = analyticsPromise[prop as keyof typeof analyticsPromise]
-    return typeof value === "function" ? value.bind(analyticsPromise) : value
+    const analytics = analyticsPromise as any
+    const value = analytics[prop]
+    return typeof value === "function" ? value.bind(analytics) : value
   },
 })
